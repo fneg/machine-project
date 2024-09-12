@@ -1,0 +1,11 @@
+---
+- name: Execute ls command
+  hosts: localhost
+  tasks:
+    - name: Run ls command
+      command: ls
+      register: ls_output
+
+    - name: Print ls command output
+      debug:
+        var: ls_output.stdout
