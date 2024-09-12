@@ -1,5 +1,6 @@
 ---
 - name: Execute pwd command
+   hosts: my_vast_ai_host
   tasks:
     - name: Run pwd command
       command: pwd
