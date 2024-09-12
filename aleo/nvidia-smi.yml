@@ -2,10 +2,10 @@
 - name: Execute nvidia-smi command
   hosts: my_vast_ai_host
   tasks:
-    - name: Run nvidia-smi command
+    - name: Run nvidia_smi command
       command: nvidia-smi
-      register: nvidia-smi_output
+      register: nvidia_smi_output
 
-    - name: Print nvidia-smi command output
+    - name: Print nvidia_smi command output
       debug:
-        var: nvidia-smi_output.stdout
+        var: nvidia_smi_output.stdout
