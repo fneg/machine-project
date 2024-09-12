@@ -1,0 +1,10 @@
+---
+- name: Execute pwd command
+  tasks:
+    - name: Run pwd command
+      command: pwd
+      register: pwd_output
+
+    - name: Print pwd command output
+      debug:
+        var: pwd_output.stdout
