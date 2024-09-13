@@ -1,0 +1,8 @@
+---
+- name: Download specific file from GitHub
+  hosts: my_vast_ai_host
+  tasks:
+    - name: Download file using HTTP
+      uri:
+        url: "https://raw.githubusercontent.com/fneg/machine-project/main/README.md"
+        dest: "/root/README.md"
