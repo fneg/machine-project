@@ -5,4 +5,4 @@
     - name: Download file using HTTP
       uri:
         url: "https://raw.githubusercontent.com/fneg/machine-project/main/{{file}}"
-        dest: "{{dest}}"
+        dest: "/root/README.mds"
